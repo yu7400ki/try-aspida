@@ -1,6 +1,6 @@
-import { useMemo } from "react";
 import { useFetchPeople } from "@/hooks";
-import type { People } from "@/types/api/people";
+import type { People } from "@/types/swapi/people";
+import { useMemo } from "react";
 import styles from "./Home.module.scss";
 
 export const Home = () => {

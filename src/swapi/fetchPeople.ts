@@ -1,6 +1,6 @@
 import { client } from "@/libs/aspida";
-import { peopleResponseSchema, peopleRequestQuerySchema } from "@/types/api/people";
-import type { PeopleRequestQuery, PeopleResponse } from '@/types/api/people';
+import type { PeopleRequestQuery, PeopleResponse } from '@/types/swapi/people';
+import { peopleRequestQuerySchema, peopleResponseSchema } from "@/types/swapi/people";
 
 export const fetchPeople = async (query: PeopleRequestQuery): Promise<PeopleResponse> => {
   console.log("fetchPeople", query);

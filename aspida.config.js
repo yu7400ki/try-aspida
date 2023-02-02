@@ -1,4 +1,6 @@
-module.exports = {
-  input: "src/api",
-  baseURL: "https://swapi.dev",
-}
+module.exports = [
+  {
+    input: "src/swapi",
+    baseURL: "https://swapi.dev",
+  },
+];

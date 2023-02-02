@@ -1,4 +1,4 @@
-import type { PeopleRequestQuery, PeopleResponse } from "@/types/api/people";
+import type { PeopleRequestQuery, PeopleResponse } from "@/types/swapi/people";
 
 export type Methods = {
   get: {
