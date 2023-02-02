@@ -8,13 +8,17 @@ export const useFetch = <T>(
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
+    let ignore = false;
+
     const fetch = async () => {
       try {
         setIsLoading(true);
         const data = await fetcher();
+        if (ignore) return;
         setData(data);
       } catch (error) {
         if (error instanceof Error) {
+          if (ignore) return;
           setError(error);
         }
       } finally {
@@ -22,6 +26,10 @@ export const useFetch = <T>(
       }
     };
     fetch();
+
+    return () => {
+      ignore = true;
+    };
   }, [fetcher]);
 
   return { data, error, isLoading };
