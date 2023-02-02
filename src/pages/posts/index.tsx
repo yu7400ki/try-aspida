@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import { HomePage } from '@/components/pages/index'
+import { Posts } from '@/components/pages/posts'
 
-const Home = () => {
+const Page = () => {
   return (
     <>
       <Head>
@@ -10,9 +10,9 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HomePage />
+      <Posts />
     </>
   )
 }
 
-export default Home
+export default Page

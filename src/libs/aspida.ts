@@ -1,4 +1,6 @@
 import aspida from "@aspida/axios"
-import api from "@/swapi/$api"
+import swapi from "@/api/swapi/$api"
+import jsonplaceholder from "@/api/jsonplaceholder/$api"
 
-export const client = api(aspida())
+export const swClient = swapi(aspida())
+export const jsonplaceholderClient = jsonplaceholder(aspida())

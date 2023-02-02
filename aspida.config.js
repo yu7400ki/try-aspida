@@ -1,6 +1,10 @@
 module.exports = [
   {
-    input: "src/swapi",
+    input: "src/api/swapi",
     baseURL: "https://swapi.dev",
   },
+  {
+    input: "src/api/jsonplaceholder",
+    baseURL: "https://jsonplaceholder.typicode.com",
+  }
 ];

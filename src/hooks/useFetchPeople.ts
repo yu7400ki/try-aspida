@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import { fetchPeople } from "@/swapi/fetchPeople";
+import { fetchPeople } from "@/api/swapi/fetchPeople";
 import { useFetch } from "./useFetch";
 
 export const useFetchPeople = (page: number = 1) => {

@@ -1,4 +1,4 @@
-import { client } from "@/libs/aspida";
+import { swClient as client } from "@/libs/aspida";
 import type { PeopleRequestQuery, PeopleResponse } from '@/types/swapi/people';
 import { peopleRequestQuerySchema, peopleResponseSchema } from "@/types/swapi/people";
 
